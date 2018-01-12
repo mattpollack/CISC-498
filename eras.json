@@ -1,0 +1,47 @@
+{
+    version: "0.0.1",
+    title: "ERAS Protocol",
+    stages:
+    [
+	{
+	    title: "Pre",
+	    description: "Before the operation",
+	    type: "checklist",
+	    list:
+	    [
+		{ title: "Chewing gum", description: "Minty fresh" },
+		{ title: "Pop", description: "Dr Pepper" }
+	    ]
+	},
+	{
+	    title: "Intra",
+	    description: "During the operation",
+	    type: "timelist",
+	    list:
+	    [
+		{
+		    title:  "MED 0",
+		    description: "Administer med 0 carefully"
+		    start:  0,
+		    length: 60
+		},
+		{
+		    title:  "MED 1",
+		    description: "Administer med 1 even more carefully"
+		    start:  10,
+		    length: 80
+		}
+	    ]
+	},
+	{
+	    title: "Post",
+	    description: "After the operation",
+	    type: "checklist",
+	    list:
+	    [
+		{ title: "Chewing gum", description: "Minty fresh" },
+		{ title: "Pop", description: "Dr Pepper" }
+	    ]
+	}
+    ]
+}
