@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Flowchart from './flowchart.js'
+import Navigator from './navigator.js'
 
 /*
   Software Arch
@@ -30,9 +31,9 @@ import Flowchart from './flowchart.js'
 
   class FlowStageChecked : FlowStage
     // implements onEnter and onExit
-  
+
   class FlowItem : Describable, React.Component
-    // 
+    //
 
   class FlowItemTimed : FlowItem
     timeStart: time
@@ -40,14 +41,17 @@ import Flowchart from './flowchart.js'
 
   class FlowItemChecked : FlowItem
     checked: bool
-  
-  
+
+
  */
 
 export default class App extends React.Component {
   render() {
     return (
-	<Flowchart></Flowchart>
+      <Navigator>
+	     <Flowchart></Flowchart>
+       <Text>TWO</Text>
+      </Navigator>
     );
   }
 }
